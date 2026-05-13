@@ -218,12 +218,12 @@
         <a href="cv.pdf" download class="contact-link"><span class="link-icon">↓</span>Télécharger mon CV</a>
       </div>
     </div>
-    <form class="contact-form" onsubmit="handleSubmit(event)">
-      <div class="form-group"><label class="form-label">Nom</label><input type="text" class="form-input" placeholder="Votre nom" /></div>
-      <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="votre@email.com" /></div>
-      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Votre message..."></textarea></div>
-      <button type="submit" class="btn-send">Envoyer →</button>
-    </form>
+  <form class="contact-form" action="https://formspree.io/f/xeendzrn" method="POST">
+    <div class="form-group"><label class="form-label">Nom</label><input type="text" name="name" class="form-input" placeholder="Votre nom" /></div>
+    <div class="form-group"><label class="form-label">Email</label><input type="email" name="email" class="form-input" placeholder="votre@email.com" /></div>
+    <div class="form-group"><label class="form-label">Message</label><textarea name="message" class="form-textarea" placeholder="Votre message..."></textarea></div>
+    <button type="submit" class="btn-send">Envoyer →</button>
+  </form>
   </div>
 </section>
 
