@@ -243,7 +243,190 @@
 <footer>
   <span>©2026 Mateo Karpiel <a href="https://mateokpl.fr">mateokpl.fr</a></span>
 </footer>
+function MentionsLegales() {
+  return (
+    <div className="min-h-screen bg-background">
+      <main className="mx-auto max-w-4xl px-6 py-16">
+        
+        {/* Titre */}
+        <section className="mb-12">
+          <h1 className="text-4xl font-bold tracking-tight text-foreground">
+            Mentions légales
+          </h1>
 
+          <p className="mt-4 text-muted-foreground">
+            Informations légales relatives au site mateokpl.fr
+          </p>
+        </section>
+
+        {/* Éditeur */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Éditeur du site
+          </h2>
+
+          <p className="mb-2">
+            <strong>Éditeur :</strong> Matéo Karpiel
+          </p>
+
+          <p className="mb-2">
+            <strong>Email :</strong> karpeil.mateo@gmail.fr
+          </p>
+
+          <p>
+            <strong>Directeur de la publication :</strong> Matéo Kpl
+          </p>
+        </section>
+
+        {/* Hébergeur */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Hébergement
+          </h2>
+
+          <p className="mb-2">
+            <strong>Hébergeur :</strong> GitHub Pages
+          </p>
+
+          <p className="mb-2">
+            <strong>Société :</strong> GitHub, Inc
+          </p>
+
+          <p className="mb-2">
+            <strong>Site :</strong> 
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+              >
+              github.com
+            </a>
+          </p>
+        </section>
+
+        {/* Propriété intellectuelle */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Propriété intellectuelle
+          </h2>
+
+          <p className="leading-7 text-muted-foreground">
+            L'ensemble des contenus présents sur ce site, notamment les
+            textes, images, illustrations, graphismes, éléments visuels et
+            éléments de code, est protégé par les dispositions relatives à
+            la propriété intellectuelle, sauf mention contraire.
+          </p>
+
+          <p className="mt-4 leading-7 text-muted-foreground">
+            Toute reproduction, représentation, modification, publication ou
+            diffusion, totale ou partielle, des contenus présents sur ce site
+            est interdite sans autorisation préalable de l'éditeur, sauf
+            dans les cas prévus par la loi.
+          </p>
+        </section>
+
+        {/* Données personnelles */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Données personnelles
+          </h2>
+
+          <p className="leading-7 text-muted-foreground">
+            Le formulaire de contact présent sur ce site permet aux visiteurs
+            de transmettre leur nom, leur adresse e-mail et le contenu de
+            leur message.
+          </p>
+
+          <p className="mt-4 leading-7 text-muted-foreground">
+            Ces informations sont collectées uniquement afin de permettre à
+            l'éditeur de répondre aux demandes envoyées via le formulaire de
+            contact.
+          </p>
+
+          <p className="mt-4 leading-7 text-muted-foreground">
+            Les données sont transmises au service Formspree, utilisé pour
+            assurer le fonctionnement technique du formulaire de contact.
+          </p>
+
+          <p className="mt-4 leading-7 text-muted-foreground">
+            Les données ne sont pas utilisées à des fins de prospection
+            commerciale et ne sont pas revendues à des tiers.
+          </p>
+
+          <p className="mt-4 leading-7 text-muted-foreground">
+            Les données sont conservées pendant la durée nécessaire au
+            traitement de la demande, puis supprimées lorsqu'elles ne sont
+            plus nécessaires.
+          </p>
+        </section>
+
+        {/* Droits */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Vos droits
+          </h2>
+
+          <p className="leading-7 text-muted-foreground">
+            Conformément à la réglementation applicable en matière de
+            protection des données personnelles, vous pouvez demander
+            l'accès, la rectification, l'effacement ou la limitation du
+            traitement de vos données personnelles, selon les conditions
+            prévues par la réglementation.
+          </p>
+
+          <p className="mt-4 leading-7 text-muted-foreground">
+            Pour exercer ces droits ou pour toute question relative au
+            traitement de vos données, vous pouvez contacter l'éditeur à
+            l'adresse suivante :
+          </p>
+
+          <p className="mt-4">
+            <strong>Email :</strong> TON-EMAIL@example.com
+          </p>
+        </section>
+
+        {/* Cookies */}
+        <section className="mb-10">
+          <h2 className="mb-4 text-2xl font-semibold">
+            Cookies
+          </h2>
+
+          <p className="leading-7 text-muted-foreground">
+            Ce site n'utilise pas de cookies publicitaires ou de cookies
+            destinés à suivre les visiteurs à des fins commerciales.
+          </p>
+
+          <p className="mt-4 leading-7 text-muted-foreground">
+            Si des services tiers utilisés sur le site déposent des cookies
+            ou utilisent des technologies similaires, les informations
+            correspondantes devront être précisées dans une politique de
+            confidentialité adaptée.
+          </p>
+        </section>
+
+        {/* Contact */}
+        <section>
+          <h2 className="mb-4 text-2xl font-semibold">
+            Contact
+          </h2>
+
+          <p className="leading-7 text-muted-foreground">
+            Pour toute question concernant le site ou les présentes mentions
+            légales, vous pouvez contacter l'éditeur à l'adresse suivante :
+          </p>
+
+          <p className="mt-4">
+            <strong>Email :</strong> TON-EMAIL@example.com
+          </p>
+        </section>
+
+      </main>
+    </div>
+  );
+}
+
+export default MentionsLegales;
 <script src="./js/main.js"></script>
 </body>
 </html>
