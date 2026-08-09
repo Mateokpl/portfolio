@@ -46,7 +46,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 500; padding: 1.2rem 
 @keyframes drift2 { to { transform: translate(-40px, -30px); } }
 
 .hero-tag { display: inline-block; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); border: 1px solid rgba(124,106,255,.3); padding: .3rem .8rem; border-radius: 2rem; margin-bottom: 2rem; width: fit-content; opacity: 0; animation: fadeUp .6s ease forwards .2s; }
-.hero-title { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(3rem, 8vw, 7rem); line-height: .95; letter-spacing: -.04em; max-width: 900px; opacity: 0; animation: fadeUp .7s ease forwards .4s; }
+.hero-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(3rem, 8vw, 7rem); line-height: .95; letter-spacing: -.04em; max-width: 800px; opacity: 0; animation: fadeUp .7s ease forwards .4s; }
 .hero-title .line2 { display: block; -webkit-text-stroke: 1px rgba(232,232,240,.3); color: transparent; }
 .hero-title .accent-word { color: var(--accent); -webkit-text-stroke: 0; }
 .hero-desc { margin-top: 2.5rem; max-width: 480px; color: var(--muted); font-size: 1.05rem; line-height: 1.7; opacity: 0; animation: fadeUp .7s ease forwards .6s; }
