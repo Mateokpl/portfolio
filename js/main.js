@@ -2,18 +2,25 @@
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('nav-links');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-});
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
+    const isOpen = hamburger.classList.toggle('open');
+    navLinks.classList.toggle('open', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+}
 
 // Ferme le menu au clic sur un lien
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
   });
-});
+}
+
 
 /* ── Curseur personnalisé ── */
 const cursor = document.getElementById('cursor');
@@ -28,16 +35,22 @@ document.addEventListener('mousemove', e => {
 function animCursor() {
   cursor.style.left = mx + 'px';
   cursor.style.top  = my + 'px';
+
   rx += (mx - rx) * 0.12;
   ry += (my - ry) * 0.12;
+
   ring.style.left = rx + 'px';
   ring.style.top  = ry + 'px';
+
   requestAnimationFrame(animCursor);
 }
+
 animCursor();
+
 
 /* ── Scroll reveal ── */
 const reveals = document.querySelectorAll('.reveal');
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -49,12 +62,16 @@ const observer = new IntersectionObserver(entries => {
 
 reveals.forEach(el => observer.observe(el));
 
+
 /* ── Formulaire de contact ── */
 function handleSubmit(e) {
   e.preventDefault();
+
   const btn = e.target.querySelector('.btn-send');
+
   btn.textContent = 'Envoyé ✓';
   btn.style.background = '#22c55e';
+
   setTimeout(() => {
     btn.textContent = 'Envoyer →';
     btn.style.background = '';
