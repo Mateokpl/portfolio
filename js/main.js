@@ -1,3 +1,20 @@
+/* ── Menu hamburger ── */
+const hamburger = document.getElementById('hamburger');
+const navLinks  = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  navLinks.classList.toggle('open');
+});
+
+// Ferme le menu au clic sur un lien
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    navLinks.classList.remove('open');
+  });
+});
+
 /* ── Curseur personnalisé ── */
 const cursor = document.getElementById('cursor');
 const ring   = document.getElementById('cursor-ring');
